@@ -463,9 +463,16 @@ body {
     box-shadow: 1px 2px 20px #043f3950;
     border-radius: 20px;
     overflow: hidden;
+  
   padding: 10px 0;
   transition: var(--mainTransitionDuration);
 
+}
+@media(max-width:767px){
+    .portfolio .portfolioContent .card {
+        width: 80%;
+        margin: auto;
+    }
 }
 .portfolio .portfolioContent .card:hover{ 
     transform: translateY(-8px);
@@ -522,6 +529,14 @@ body {
     height: 300px;
     position: relative;
 
+}
+@media(max-width:767px){
+    .certificats .certificat div {
+        width: 90gi%;
+        margin: auto;
+        
+        
+    }
 }
 
 .certificats .certificat div span {
