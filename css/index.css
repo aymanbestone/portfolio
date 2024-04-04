@@ -148,6 +148,11 @@ body {
 /* start header */
 .header {
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.169);
+    z-index: 100;
 
 
 }
