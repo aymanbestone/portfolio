@@ -185,6 +185,7 @@ body {
     display: none;
     z-index: 100;
     transition: 0.3s;
+    
 
 }
 
@@ -220,10 +221,6 @@ body {
     width: 100%;
 }
 
-.header .links:hover ul {
-    display: block;
-
-}
 
 .header .links .icon {
     width: 30px;
