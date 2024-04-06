@@ -38,22 +38,35 @@
 		</div>
 		<!-- end header -->
 		<script>
+			var navIcon = document.getElementById("myicon");
+
+			var spanList = document.querySelectorAll("#myicon span");
+
+			var nav = document.getElementById("mynav");
+			let navLiLists = document.querySelectorAll("ul li a");
 			
-			var navIcon = document.getElementById('myicon');
-		
-			var nav = document.getElementById('mynav');
-		
-		
-			navIcon.addEventListener('click', function() {
-				
-				if (nav.style.display === 'block') {
-					
-					nav.style.display = 'none';
-				} else {
-					
-					nav.style.display = 'block';
+
+			function checkIfExistInArray(element, arr) {
+				for (let i = 0; i < navLiLists.length; i++) {
+					if (element == navLiLists[i]) return true;
 				}
+				return false;
+			}
+
+			navIcon.addEventListener("click", function (event) {
+				event.stopPropagation();
+
+				if (nav.style.display === "block") nav.style.display = "none";
+				else nav.style.display = "block";
 			});
+
+			document.onclick = function (event) {
+				let target = event.target;
+
+				if (!checkIfExistInArray(target, navLiLists)) {
+					nav.style.display = "none";
+				}
+			};
 		</script>
 		<!-- start landing section -->
 		<div class="landing">
@@ -188,14 +201,14 @@
 			<div class="container">
 				<h2 class="mainTitle">Certificates</h2>
 				<div class="certificat">
-					<div><span>Poo(c++)</span></div>
-					<div><span>Data Science</span></div>
-					<div><span>html&css&js</span></div>
-					<div><span>js</span></div>
-					<div><span>sql</span></div>
-					<div><span>python</span></div>
-					<div><span>Raspberry PI</span></div>
-					<div><span>DATA->INSIGHTS</span></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
 			</div>
 		</div>
@@ -238,8 +251,7 @@
 		</div>
 		<!-- end contact  -->
 		<!-- start footer -->
-		<div class="footer">Ayman El hilali <span>2024</span></div>
+		<div class="footer">Ayman El hilali Copyright &copy; <span>2024</span></div>
 		<!-- end footer -->
-		<script src="index.js"></script>
 	</body>
 </html>
