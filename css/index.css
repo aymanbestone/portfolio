@@ -636,6 +636,34 @@ body {
 
 
 }
+/* 9 */
+.certificats .certificat div:nth-child(9) {
+
+    background-image: url(../images/arduino.png);
+
+
+
+
+}
+/* 10 */
+.certificats .certificat div:nth-child(8) {
+
+    background-image: url(../images/css.png);
+
+
+
+
+}
+/* 9 */
+.certificats .certificat div:nth-child(11) {
+
+    background-image: url(../images/html.png);
+
+
+
+
+}
+
 
 
 /* end certificats */
